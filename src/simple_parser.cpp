@@ -3,6 +3,12 @@
 #include <algorithm>
 #include <vector>
 
+void SimpleParser::push(uint8_t b) {}
+
+void SimpleParser::reset() {}
+
+std::shared_ptr<Packet> SimpleParser::get_packet() const {}
+
 uint8_t getchecksum(std::vector<uint8_t>::const_iterator begin,
                     std::vector<uint8_t>::const_iterator end) {
   int whole_checksum = 0;
