@@ -1,7 +1,6 @@
 #include <gtest/gtest.h>
 
 #include "simple_parser.hpp"
-#include <vector>
 
 TEST(ParserTest, BasicPacket) {
   SimpleParser sp;
@@ -66,4 +65,5 @@ TEST(ParserTest, BzzPacket) {
   5 Контрольный номер сообщения больше 3
   6 Некорректный код команды
   7 Запрос пакета до полной его записи
+  8 Несколько запросов пакета подряд
 */
