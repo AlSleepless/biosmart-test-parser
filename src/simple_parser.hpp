@@ -4,22 +4,21 @@
 #include <cstdint>
 #include <memory>
 
-class Packet
-{
+class Packet {
 public:
-    virtual std::string to_string() const = 0;
+  virtual std::string to_string() const = 0;
 };
 
 // TODO:
 
-class SimpleParser
-{
+class SimpleParser {
 public:
-    void push(uint8_t b);
-    void reset();
-    std::shared_ptr<Packet> get_packet() const;
+  void push(uint8_t b);
+  void reset();
+  std::shared_ptr<Packet> get_packet() const;
+
 private:
-    // TODO:
+  // TODO:
 };
 
 #endif // SIMPLE_PARSER_HPP
